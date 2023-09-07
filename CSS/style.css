@@ -102,11 +102,11 @@ span a{
     }
 
     .innerSection1 {
-        height: 22rem;
+        height: 20rem;
     }
     
     .innerSection2 {
-        height: 26rem;
+        height: 23.5rem;
     }
     
     h1{
@@ -155,7 +155,7 @@ span a{
     }
     
     .innerSection2 {
-        height: 28.5rem;
+        height: 25rem;
     }
     
     h1{
@@ -220,7 +220,7 @@ span a{
 @media screen and (min-width: 769px) and (max-width: 2000px){
     .outerSection{
         width: 33%;
-        height: 47rem;
+        height: 47.3rem;
         margin: 0 auto 0 auto;
         border: 1px solid rgb(160, 48, 48);
     }
@@ -234,14 +234,13 @@ span a{
     }
 
     span a{
-        margin-top: 2%;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .contain{
         display: inline-block;
         width: 100%;
-        margin-top: 3%;
+        margin-top: 1%;
     }
     .profilePicture{
         margin-left: 28%;
