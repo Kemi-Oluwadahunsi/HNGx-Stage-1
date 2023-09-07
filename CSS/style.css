@@ -6,7 +6,7 @@ body{
 
 .outerSection{
     width: 25%;
-    height: 60rem;
+    height: 58rem;
     margin: 1% auto 0 auto;
     border: 1px solid rgb(160, 48, 48);
 }
@@ -228,13 +228,17 @@ span a{
 @media screen and (min-width: 769px) and (max-width: 1370px){
     .outerSection{
         width: 35%;
-        height: 63rem;
+        height: 45rem;
         margin: 1% auto 0 auto;
         border: 1px solid rgb(160, 48, 48);
     }
 
+    .innerSection1{
+        height: 35%;
+    }
+
     .innerSection2{
-        height: 40rem;
+        height: 35rem;
     }
 
     span a{
@@ -249,5 +253,8 @@ span a{
     }
     .profilePicture{
         margin-left: 28%;
+    }
+    h1{
+        padding-top: 10%;
     }
 }
