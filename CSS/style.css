@@ -225,16 +225,16 @@ span a{
 }
 
 
-@media screen and (min-width: 769px) and (max-width: 1370px){
+@media screen and (min-width: 769px) and (max-width: 1440px){
     .outerSection{
         width: 35%;
-        height: 45rem;
+        height: 56rem;
         margin: 1% auto 0 auto;
         border: 1px solid rgb(160, 48, 48);
     }
 
     .innerSection1{
-        height: 35%;
+        height: 25rem;
     }
 
     .innerSection2{
@@ -255,6 +255,7 @@ span a{
         margin-left: 28%;
     }
     h1{
-        padding-top: 10%;
+        padding-top: 30%;
+        font-size: 3rem;
     }
 }
