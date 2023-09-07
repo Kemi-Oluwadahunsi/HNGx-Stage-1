@@ -130,10 +130,6 @@ span a{
         padding: 0 3%;
     } 
     
-    /* .clilckableLink:hover{
-        display: none;
-    }
-     */
     #dayOfTheWeek{
         margin-top: 8%;
         font-size: 1.5rem;
@@ -183,10 +179,6 @@ span a{
         padding: 0 3%;
     }
     
-    .clilckableLink:hover{
-        display: none;
-    }
-    
     #dayOfTheWeek{
         margin-top: 8%;
         font-size: 1.7rem;
@@ -227,18 +219,18 @@ span a{
 
 @media screen and (min-width: 769px) and (max-width: 2000px){
     .outerSection{
-        width: 35%;
-        height: 56rem;
-        margin: 1% auto 0 auto;
+        width: 33%;
+        height: 50rem;
+        margin: 0 auto 0 auto;
         border: 1px solid rgb(160, 48, 48);
     }
 
     .innerSection1{
-        height: 24rem;
+        height: 21rem;
     }
 
     .innerSection2{
-        height: 33rem;
+        height: 29rem;
     }
 
     span a{
