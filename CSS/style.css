@@ -48,7 +48,7 @@ img{
 
 .track{
     margin-top: 10%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Playfair Display', serif;
 }
 
@@ -57,7 +57,7 @@ span{
 }
 
 span a{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic;
     text-decoration: none;
     color: navy;
@@ -235,12 +235,13 @@ span a{
 
     span a{
         font-size: 1.4rem;
+        padding: .5% 3%;
     }
 
     .contain{
         display: inline-block;
         width: 100%;
-        margin-top: 1%;
+        margin: 0;
     }
     .profilePicture{
         margin-left: 28%;
@@ -252,6 +253,10 @@ span a{
 
     .track{
         margin-top: 7%;
+    }
+
+    #dayOfTheWeek{
+        margin-top: 12%;
     }
 
     .clock{
