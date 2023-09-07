@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outerSection{
+    width: 25%;
+    height: 60rem;
+    margin: 1% auto 0 auto;
+    border: 1px solid rgb(160, 48, 48);
+}
+
+.innerSection1 {
+    text-align: center;
+    height: 30rem;
+    background-color: rgb(160, 48, 48);
+}
+
+.innerSection2 {
+    margin: 0 auto;
+    height: 30rem;
+    text-align: center;
+
+}
+
+h1{
+    width: 100%;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    padding: 40% 1% 0 2%;
+    color: rgb(231, 208, 208);
+}
+
+.profilePicture{
+    border-radius: 50px;
+    width: 40%;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: -25%;
+}
+img{
+    width: 100%;
+    border: 15px solid white;
+    border-radius: 120px;
+}
+
+.track{
+    margin-top: 10%;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+span{
+    width: 100%;
+}
+
+span a{
+    font-size: 1.3rem;
+    font-style: italic;
+    text-decoration: none;
+    color: navy;
+    border: 1px solid rgb(160, 48, 48);
+    padding: 2% 3%;
+}
+
+.clilckableLink:hover{
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.gitIcon{
+    display: inline-block;
+    margin-left: 1%;
+}
+
+
+
+#dayOfTheWeek{
+    display: inline-block;
+    margin-top: 15%;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.clock{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) {
+
+    .outerSection {
+        width: 100%;
+        padding: 0 1%;
+        height: 44rem;
+        margin: 0;
+    }
+
+    .innerSection1 {
+        height: 22rem;
+    }
+    
+    .innerSection2 {
+        height: 26rem;
+    }
+    
+    h1{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 25% 0 0 0%;
+    }
+    
+    .profilePicture{
+        margin-left: 26%;
+        margin-top: -27%;
+    }
+    
+    .track{
+        margin-top: 7%;
+        font-size: 1.2rem;
+    }
+    
+    span a{
+        font-size: 1rem;
+        padding: 0 3%;
+    } 
+    
+    .clilckableLink:hover{
+        display: none;
+    }
+    
+    #dayOfTheWeek{
+        margin-top: 8%;
+        font-size: 1.5rem;
+    }
+    
+    .clock{
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .outerSection {
+        width: 80%;
+        height: 45rem;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .innerSection1 {
+        height: 20rem;
+    }
+    
+    .innerSection2 {
+        height: 28.5rem;
+    }
+    
+    h1{
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 25% 0 0 0%;
+    }
+    
+    .profilePicture{
+        margin-left: 27%;
+        margin-top: -27%;
+    }
+    
+    .track{
+        margin-top: 10%;
+        font-size: 1.4rem;
+    }
+    
+    span a{
+        font-size: 1.2rem;
+        padding: 0 3%;
+    }
+    
+    .clilckableLink:hover{
+        display: none;
+    }
+    
+    #dayOfTheWeek{
+        margin-top: 8%;
+        font-size: 1.7rem;
+    }
+    
+    .clock{
+        font-size: 1.7rem;
+        margin-top: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 550px) and (max-width: 685px){
+    h1{
+        padding-top: 12%;
+    }
+
+    #dayOfTheWeek{
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 686px) and (max-width: 768px){
+
+    .outerSection {
+        height: 48rem;
+    }
+
+    h1{
+        padding-top: 12%;
+    }
+
+    #dayOfTheWeek{
+        margin-top: 18%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1370px){
+    .outerSection{
+        width: 35%;
+        height: 63rem;
+        margin: 1% auto 0 auto;
+        border: 1px solid rgb(160, 48, 48);
+    }
+
+    .innerSection2{
+        height: 40rem;
+    }
+
+    span a{
+        margin-top: 2%;
+        font-size: 1.5rem;
+    }
+
+    .contain{
+        display: inline-block;
+        width: 100%;
+        margin-top: 6%;
+    }
+    .profilePicture{
+        margin-left: 28%;
+    }
+}
