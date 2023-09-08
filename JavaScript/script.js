@@ -10,24 +10,53 @@ const dayName = dayNames[dayOfWeek];
 
 // Display the day of the week in the DOM
 const dayOfWeekElement = document.getElementById("dayOfTheWeek");
-dayOfWeekElement.textContent = dayName;
+dayOfWeekElement.textContent = `Current Day : ${dayName}`;
 
 
 // Get the current time
 
-function updateClock() {
+// function updateClock() {
+//     const now = new Date();
+//     const hours = String(now.getHours()).padStart(2, '0');
+//     const minutes = String(now.getMinutes()).padStart(2, '0');
+//     const seconds = String(now.getSeconds()).padStart(2, '0');
+
+//     document.getElementById('hours').textContent = hours; // Get hour
+//     document.getElementById('minutes').textContent = minutes; // Get minutes
+//     document.getElementById('seconds').textContent = seconds; // Get seconds
+// }
+
+// // Update the clock every second
+// setInterval(updateClock, 1000);
+
+// // Initial update
+// updateClock();
+
+
+function updateTime() {
     const now = new Date();
+    
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
     const seconds = String(now.getSeconds()).padStart(2, '0');
-
-    document.getElementById('hours').textContent = hours; // Get hour
-    document.getElementById('minutes').textContent = minutes; // Get minutes
-    document.getElementById('seconds').textContent = seconds; // Get seconds
+    
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
 }
 
-// Update the clock every second
-setInterval(updateClock, 1000);
+// Update the time every 100 milliseconds
+setInterval(updateTime, 100);
 
-// Initial update
-updateClock();
+// Initial call to display the time
+updateTime();
+
+function updateTimeInMillisecs() {
+    const millisecsElement = document.getElementById('milliseconds');
+    const currentTimeMillis = new Date().getTime();
+    millisecsElement.textContent = `${currentTimeMillis}`;
+  }
+
+  // Update the time initially and then every second
+  updateTimeInMillisecs();
+  setInterval(updateTimeInMillisecs, 1000);

@@ -14,40 +14,37 @@
 </head>
 <body>
     
-    <section class="outerSection">
+    <div class="outerSection">
 
-        <section class="innerSection1">
-            <!-- Slack Name -->
+        <!-- Slack Name and display picture -->
+        <div class="innerSection1">
             <h1 data-testid="slackUserName">TechMrs</h1>
-        </section>
+            <img src="./image/Beautiful me.jpg" data-testid="slackDisplayImages" alt="TechMrs">
+        </div>
         
-        <section class="innerSection2">
-
-            <section class="profilePicture">
-                <!-- Slack Display Picture -->
-                <img src="./image/Beautiful me.jpg" data-testid="slackDisplayImages" alt="TechMrs">
-            </section>
+        <div class="innerSection2">
 
             <!-- Current Day of The Week -->
-            <span id="dayOfTheWeek" data-testid="currentDayOfTheWeek"></span>
-
+                <span id="dayOfTheWeek" class="dayOfTheWeek" data-testid="currentDayOfTheWeek"></span>
+            
             <!-- Current UTC Time -->
 
-            <section class="clock" data-testid="currentUTCTime">
-                <span id="hours">00</span> :
-                <span id="minutes">00</span> :
+            <div id="clock"  data-testid="currentUTCTime" >
+                <span id="hours">00</span>:
+                <span id="minutes">00</span>:
                 <span id="seconds">00</span>
-            </section>
+            </div>
+            <div id="milliseconds" class="clock" data-testid="currentUTCTime"></div>
 
             <!-- Track -->
-            <p class="track">Track: <br>Frontend Development</p>
+            <p class="track" data-testid="myTrack">Track: Frontend</p>
 
             <!-- GitHub URL -->
-            <span class="clilckableLink contain"><a href="https://github.com/Kemi-Oluwadahunsi/HNGx-Stage-1-Task.git" target="_blank" data-testid="githubURL">GitHub Repository<i class="fa-brands fa-github fa-beat-fade fa-sm gitIcon"></i></a></span>
+            <span class="clilckableLink contain"><a href="https://github.com/Kemi-Oluwadahunsi/HNGx-Stage-1-Task.git" target="_blank" data-testid="githubURL">GitHub Repository</a></span>
 
-        </section>
+        </div>
 
-    </section>
+    </div>
     
     <script src="https://kit.fontawesome.com/ae929ef5dc.js" crossorigin="anonymous"></script>
     <script src="/JavaScript/script.js"></script>

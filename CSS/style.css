@@ -5,23 +5,26 @@ body{
 }
 
 .outerSection{
-    width: 25%;
-    height: 56rem;
-    margin: 0 auto 0 auto;
+    width: 33%;
+    height: 54rem;
+    margin: 1% auto 0 auto;
     border: 1px solid rgb(160, 48, 48);
+    border-radius: 10px;
+    box-shadow: 7px 7px 10px 7px #d8bbbb;
 }
 
 .innerSection1 {
     text-align: center;
-    height: 30rem;
-    background-color: rgb(160, 48, 48);
+}
+
+h1, img{
+    display: flex;
+    flex-direction: column;
 }
 
 .innerSection2 {
     margin: 0 auto;
-    height: 30rem;
     text-align: center;
-
 }
 
 h1{
@@ -29,26 +32,52 @@ h1{
     margin: 0;
     font-family: 'Playfair Display', serif;
     font-size: 2.1rem;
-    padding: 40% 1% 0 2%;
-    color: rgb(231, 208, 208);
+    color: rgb(160, 48, 48);
 }
 
-.profilePicture{
-    border-radius: 50px;
-    width: 40%;
-    height: 200px;
-    margin-left: 30%;
-    margin-top: -25%;
-}
 img{
-    width: 100%;
+    width: 50%;
     border: 15px solid white;
     border-radius: 120px;
+    margin: 0 auto;
+}
+
+.currentDay{
+    display: flex;
+    justify-content: center;
+}
+
+#dayOfTheWeek{
+    /* display: inline-block; */
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 30%;
+    text-align: start;
+}
+
+.dayOfTheWeek{
+    /* display: inline-block; */
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 50%;
+}
+
+#clock{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+.clock{
+    display: block;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 5%;
 }
 
 .track{
-    margin-top: 10%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Playfair Display', serif;
 }
 
@@ -57,7 +86,7 @@ span{
 }
 
 span a{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-style: italic;
     text-decoration: none;
     color: navy;
@@ -71,55 +100,43 @@ span a{
     transform: scale(1.2);
 }
 
-.gitIcon{
-    display: inline-block;
-    margin-left: 1%;
-}
-
-
-
-#dayOfTheWeek{
-    display: inline-block;
-    margin-top: 15%;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.clock{
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-top: 5%;
-}
-
 @media screen and (max-width: 480px) {
 
     .outerSection {
-        width: 100%;
+        width: 90%;
         padding: 0 1%;
-        height: 44rem;
-        margin: 0;
+        height: 35rem;
+        box-shadow: none;
     }
 
     .innerSection1 {
-        height: 20rem;
+        height: 16rem;
     }
     
     .innerSection2 {
-        height: 23.5rem;
+        height: 25rem;
+        padding-top: 10%;
     }
     
     h1{
         width: 100%;
         font-size: 1.5rem;
-        padding: 25% 0 0 0%;
+        padding: 2% 0 0 0%;
     }
     
-    .profilePicture{
-        margin-left: 26%;
-        margin-top: -27%;
+    .dayOfTheWeek{
+        font-size: 1.3rem;
+        width: 100%;
     }
     
+    #clock{
+        font-size: 1.3rem;
+        display: block;
+    }
+    
+    .clock{
+        font-size: 1.3rem;
+    }
     .track{
         margin-top: 7%;
         font-size: 1.2rem;
@@ -127,115 +144,67 @@ span a{
     
     span a{
         font-size: 1rem;
-        padding: 0 3%;
+        padding: 2% 3%;
     } 
-    
-    #dayOfTheWeek{
-        margin-top: 8%;
-        font-size: 1.5rem;
-    }
-    
-    .clock{
-        font-size: 1.5rem;
-        margin-top: 5%;
-    }
     
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .outerSection {
-        width: 80%;
-        height: 45rem;
-        margin: 0 auto;
-        padding: 0;
+        width: 55%;
+        padding: 0 1%;
+        height: 39rem;
+        box-shadow: none;
     }
 
     .innerSection1 {
-        height: 20rem;
+        height: 19.5rem;
     }
     
     .innerSection2 {
-        height: 25rem;
+        height: 19rem;
+        padding-top: 9%;
     }
     
     h1{
-        width: 100%;
         font-size: 1.8rem;
-        padding: 25% 0 0 0%;
+        padding: 2% 0 0 0%;
     }
     
-    .profilePicture{
-        margin-left: 27%;
-        margin-top: -27%;
+    .dayOfTheWeek{
+        font-size: 1.5rem;
+        width: 100%;
     }
     
-    .track{
-        margin-top: 10%;
-        font-size: 1.4rem;
-    }
-    
-    span a{
-        font-size: 1.2rem;
-        padding: 0 3%;
-    }
-    
-    #dayOfTheWeek{
-        margin-top: 8%;
-        font-size: 1.7rem;
+    #clock{
+        font-size: 1.5rem;
+        display: block;
     }
     
     .clock{
-        font-size: 1.7rem;
-        margin-top: 5%;
+        font-size: 1.5rem;
+    }
+    .track{
+        margin-top: 7%;
+        font-size: 1.2rem;
     }
     
-}
-
-@media screen and (min-width: 550px) and (max-width: 685px){
-    h1{
-        padding-top: 12%;
-    }
-
-    #dayOfTheWeek{
-        margin-top: 15%;
-    }
-}
-
-@media screen and (min-width: 686px) and (max-width: 768px){
-
-    .outerSection {
-        height: 48rem;
-    }
-
-    h1{
-        padding-top: 12%;
-    }
-
-    #dayOfTheWeek{
-        margin-top: 18%;
-    }
 }
 
 
 @media screen and (min-width: 769px) and (max-width: 2000px){
+
     .outerSection{
-        width: 33%;
-        height: 47.3rem;
-        margin: 0 auto 0 auto;
-        border: 1px solid rgb(160, 48, 48);
+        height: 41.5rem;
     }
 
     .innerSection1{
-        height: 21rem;
+        height: 20rem;
     }
 
     .innerSection2{
-        height: 25rem;
-    }
-
-    span a{
-        font-size: 1.4rem;
-        padding: .5% 3%;
+        height: 20.5rem;
+        padding-top: 5%;
     }
 
     .contain{
@@ -243,23 +212,21 @@ span a{
         width: 100%;
         margin: 0;
     }
-    .profilePicture{
-        margin-left: 28%;
-    }
+    
     h1{
-        padding-top: 20%;
         font-size: 3rem;
     }
 
     .track{
-        margin-top: 7%;
+        margin-top: 10%;
     }
 
-    #dayOfTheWeek{
-        margin-top: 12%;
+    .dayOfTheWeek{
+        width: 50%;
     }
 
-    .clock{
+    #clock{
+        display: block;
         margin-top: 3%;
     }
-}
+} 
