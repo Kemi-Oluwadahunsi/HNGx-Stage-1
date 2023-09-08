@@ -10,7 +10,7 @@ const dayName = dayNames[dayOfWeek];
 
 // Display the day of the week in the DOM
 const dayOfWeekElement = document.getElementById("dayOfTheWeek");
-dayOfWeekElement.textContent = `Current Day : ${dayName}`;
+dayOfWeekElement.textContent = `Current Day Of The Week: ${dayName}`;
 
 // Get UTC time in milliseconds
 
@@ -20,6 +20,5 @@ function updateTimeInMillisecs() {
     millisecsElement.textContent = `UTC Time: ${currentTimeMillis}`;
   }
 
-  // Update the time initially and then every second
-  updateTimeInMillisecs();
-  setInterval(updateTimeInMillisecs, 1000);
+updateTimeInMillisecs();
+setInterval(updateTimeInMillisecs, 1000);
