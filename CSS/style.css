@@ -195,7 +195,7 @@ span a{
 @media screen and (min-width: 769px) and (max-width: 2000px){
 
     .outerSection{
-        height: 41.5rem;
+        height: 43rem;
     }
 
     .innerSection1{
@@ -203,8 +203,8 @@ span a{
     }
 
     .innerSection2{
-        height: 20.5rem;
-        padding-top: 5%;
+        height: 22rem;
+        padding-top: 10%;
     }
 
     .contain{
