@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Kaushan+Script&family=Libre+Baskerville&family=Lobster&family=PT+Serif&family=Playfair+Display:wght@500&family=Poppins:wght@200;300;400;500;600;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">
 
+    
     <link rel="stylesheet" href="/CSS/style.css">
 
 </head>
@@ -16,37 +17,15 @@
     
     <div class="outerSection">
 
-        <!-- Slack Name and display picture -->
-        <div class="innerSection1">
-            <h1 data-testid="slackUserName">TechMrs</h1>
-            <img src="./image/Beautiful me.jpg" data-testid="slackDisplayImages" alt="TechMrs">
-        </div>
-        
-        <div class="innerSection2">
-
-            <!-- Current Day of The Week -->
-                <span id="dayOfTheWeek" class="dayOfTheWeek" data-testid="currentDayOfTheWeek"></span>
-            
-            <!-- Current UTC Time -->
-
-            <div id="clock"  data-testid="currentUTCTime" >
-                <span id="hours">00</span>:
-                <span id="minutes">00</span>:
-                <span id="seconds">00</span>
-            </div>
-            <div id="milliseconds" class="clock" data-testid="currentUTCTime"></div>
-
-            <!-- Track -->
-            <p class="track" data-testid="myTrack">Track: Frontend</p>
-
-            <!-- GitHub URL -->
-            <span class="clilckableLink contain"><a href="https://github.com/Kemi-Oluwadahunsi/HNGx-Stage-1-Task.git" target="_blank" data-testid="githubURL">GitHub Repository</a></span>
-
-        </div>
+        <h1 data-testid="slackUserName">  Username : TechMrs</h1>
+        <img src="./image/Beautiful me.jpg" data-testid="slackDisplayImages" alt="TechMrs">
+        <span id="dayOfTheWeek" class="dayOfTheWeek" data-testid="currentDayOfTheWeek"></span>
+        <div id="milliseconds" class="clock" data-testid="currentUTCTime"></div>
+        <p class="track" data-testid="myTrack">Track: Frontend</p>
+        <span class="clilckableLink contain"><a href="https://github.com/Kemi-Oluwadahunsi/HNGx-Stage-1-Task.git" target="_blank" data-testid="githubURL">GitHub Repository</a></span>
 
     </div>
     
-    <script src="https://kit.fontawesome.com/ae929ef5dc.js" crossorigin="anonymous"></script>
     <script src="/JavaScript/script.js"></script>
 </body>
 </html>

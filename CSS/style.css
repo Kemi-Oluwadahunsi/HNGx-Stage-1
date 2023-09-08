@@ -6,14 +6,11 @@ body{
 
 .outerSection{
     width: 33%;
-    height: 54rem;
+    height: 44rem;
     margin: 1% auto 0 auto;
     border: 1px solid rgb(160, 48, 48);
     border-radius: 10px;
     box-shadow: 7px 7px 10px 7px #d8bbbb;
-}
-
-.innerSection1 {
     text-align: center;
 }
 
@@ -22,16 +19,11 @@ h1, img{
     flex-direction: column;
 }
 
-.innerSection2 {
-    margin: 0 auto;
-    text-align: center;
-}
-
 h1{
     width: 100%;
-    margin: 0;
+    margin: 5% 0 0 0;
     font-family: 'Playfair Display', serif;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     color: rgb(160, 48, 48);
 }
 
@@ -42,11 +34,6 @@ img{
     margin: 0 auto;
 }
 
-.currentDay{
-    display: flex;
-    justify-content: center;
-}
-
 #dayOfTheWeek{
     font-size: 1.5rem;
     font-weight: bolder;
@@ -54,29 +41,17 @@ img{
     text-align: start;
 }
 
-.dayOfTheWeek{
-    font-size: 1.5rem;
-    font-weight: bolder;
-    width: 50%;
-}
-
-#clock{
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: bolder;
-    margin-top: 5%;
-}
-
 .clock{
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bolder;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 .track{
     font-size: 2rem;
     font-family: 'Playfair Display', serif;
+    margin-top: 10%;
 }
 
 span{
@@ -97,134 +72,3 @@ span a{
     cursor: pointer;
     transform: scale(1.2);
 }
-
-@media screen and (max-width: 480px) {
-
-    .outerSection {
-        width: 90%;
-        padding: 0 1%;
-        height: 35rem;
-        box-shadow: none;
-    }
-
-    .innerSection1 {
-        height: 16rem;
-    }
-    
-    .innerSection2 {
-        height: 25rem;
-        padding-top: 10%;
-    }
-    
-    h1{
-        width: 100%;
-        font-size: 1.5rem;
-        padding: 2% 0 0 0%;
-    }
-    
-    .dayOfTheWeek{
-        font-size: 1.3rem;
-        width: 100%;
-    }
-    
-    #clock{
-        font-size: 1.3rem;
-        display: block;
-    }
-    
-    .clock{
-        font-size: 1.3rem;
-    }
-    .track{
-        margin-top: 7%;
-        font-size: 1.2rem;
-    }
-    
-    span a{
-        font-size: 1rem;
-        padding: 2% 3%;
-    } 
-    
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .outerSection {
-        width: 55%;
-        padding: 0 1%;
-        height: 39rem;
-        box-shadow: none;
-    }
-
-    .innerSection1 {
-        height: 19.5rem;
-    }
-    
-    .innerSection2 {
-        height: 19rem;
-        padding-top: 9%;
-    }
-    
-    h1{
-        font-size: 1.8rem;
-        padding: 2% 0 0 0%;
-    }
-    
-    .dayOfTheWeek{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-    
-    #clock{
-        font-size: 1.5rem;
-        display: block;
-    }
-    
-    .clock{
-        font-size: 1.5rem;
-    }
-    .track{
-        margin-top: 7%;
-        font-size: 1.2rem;
-    }
-    
-}
-
-
-@media screen and (min-width: 769px) and (max-width: 2000px){
-
-    .outerSection{
-        height: 44rem;
-    }
-
-    .innerSection1{
-        height: 20rem;
-    }
-
-    .innerSection2{
-        height: 23rem;
-        padding-top: 12%;
-    }
-
-    .contain{
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-    }
-    
-    h1{
-        font-size: 3rem;
-    }
-
-    .track{
-        margin-top: 10%;
-    }
-
-    .dayOfTheWeek{
-        width: 50%;
-    }
-
-    #clock{
-        display: block;
-        margin-top: 3%;
-    }
-} 
